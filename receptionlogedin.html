@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+
+    <link rel="stylesheet" href="admin.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <header >
+      <div class="mainheader" id="myHeader">
+        <div class="logo">
+          <img src="images/logo3.png" alt="">
+        </div>
+        <nav class="over">
+          <a href="index.html" class="firstchild" >home</a>
+          <a href="Registerpatients.html">Register patients</a>
+          <a href="viewpatients.html">View patients</a>
+
+
+          <!-- <div class="dropdown">
+          <a href="#">login</a>
+            <div class="dropdown-content">
+              <- <a href="admin.html">Admin</a><br> -->
+              <!-- <a href="#">Recapient</a>
+              <a href="doctor.html">Doctor</a>
+            </div>
+          </div> -->
+          <a href="billing.html">Billing</a>
+            <a href="index.html">Logout</a>
+        </nav>
+
+        <div class="menubtn" >
+          <a href="index.html">
+          <button >helpline</button>
+          </a>
+        </div>
+      </div>
+<!-- <footer>
+	<p>
+		Created and maintained   by
+		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+	Shivaji suryavanshi
+		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+	</p>
+</footer> -->
+
+
+
+/
+<script>
+  const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+
+</script>
+</body>
+</html>

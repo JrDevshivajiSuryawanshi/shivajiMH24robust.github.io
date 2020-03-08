@@ -1,0 +1,329 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: ;
+  font-family: 'Josefin Sans';
+  scroll-behavior: smooth;
+
+}
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/bground2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.mainheader
+{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 29px;
+  background-color: white;
+}
+.mainheader .logo img
+{
+  width: 250px;
+  height: 70px;
+  padding-left: 60px;
+}
+.mainheader nav
+{
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainheader nav a
+{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.button{
+  margin-right: 60px;
+  cursor: pointer;
+}
+.mainheader button
+{
+  padding: 10px 45px;
+  text-aling:center;
+  font-size:14px;
+  color: #fff;
+  border:none;
+  background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+/*active link*/
+
+
+
+main
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .right-section
+{
+  padding-right:70px;
+}
+main .left-section
+{
+  padding-left: 100px;
+}
+.left-section h2
+{
+  font-size:20px;
+  text-transform: capitalize;
+  font-weight:  lighter;
+  color: #242424;
+  margin-top: 100px;
+
+}
+.left-section h1
+{
+  font-size:55px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin:15px 0;
+}
+.left-section button
+{
+    padding: 15px 45px;
+    text-aling:center;
+    font-size:14px;
+    color: #fff;
+    border:none;
+    background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+    border-radius: 34px;
+    cursor: pointer;
+  }
+  .firstchild:first-child
+  {
+    color: #649bff;
+  }
+
+  /*dropdown*/
+  .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.over a:hover{
+
+  background-color: #649bff;
+  border-radius: 39px;
+}
+
+.dropdown:hover .dropdown-content  {
+  display: block;
+  border-radius:12px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 45px;
+}
+.dropdown-content a:hover
+{
+  background-color: #649bff;
+  border-radius: 39px;
+
+}
+/* second setion of page*/
+.secondsction{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/bground.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/*services*/
+}
+.service-section
+{
+  background: url();
+  background-size: cover;
+  padding:60px 0;
+
+}
+.inner-width
+{
+width: 100%;
+max-width: 1200px;
+margin: auto;
+padding: 0 20px;
+overflow: hidden;
+}
+.section-title
+{
+  padding-top: 100px;
+  text-align: center;
+  color:#3c40c6;
+  text-transform: uppercase;
+  font-size: 30px;
+
+}
+.border
+{
+
+  width: 170px;
+  height: 2px;
+  background: #8e44ad;
+  margin: 16px auto;
+
+}
+.services-containner
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #5758BB;
+  cursor: pointer;
+}
+.service-icon
+{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #82ccdd;
+  color: #82ccdd;
+  transform:  rotate(45deg);
+  margin-top: 30px;
+  margin-bottom: 16px;
+  transition: 0.3s linear;
+
+}
+.service-icon i
+{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+
+}
+.service-box:hover .service-icon{
+
+  background:#82ccdd;
+  color: red;
+
+}
+.service-title
+{
+  font-size:18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+}
+.service-desc
+{
+  font-size: 14px;
+}
+@media  screen and (max-width:960px) {
+.service-box
+{
+  max-width: 45%;
+}
+}
+@media  screen and (max-width:768px) {
+.service-box
+{
+  max-width: 50%;
+}
+}
+@media  screen and (max-width:480px) {
+.service-box
+{
+  max-width: 100%;
+}
+}
+/*fixed header*/
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+/*thirdsection*/
+.thirdsection{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/bground2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/*thirdsectionform*/
+input[type=text], select, textarea {
+  width: 100vh;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-top:  none;
+  border-left: none;
+  border-right: none;
+}
+
+
+
+
+.container {
+  border-radius: 5px;
+  background:none;
+  padding: 20px;
+}
+.right-section button
+{
+    padding: 15px 45px;
+    text-aling:center;
+    font-size:14px;
+    color: #fff;
+    border:none;
+    background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+    border-radius: 34px;
+    cursor: pointer;
+  }
+/*fourthsection*/
+.fourthsection{
+width: 100%;
+height: 100vh;
+background-image: url(images/bground.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
